@@ -7,70 +7,80 @@
     <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
-<body class="d-flex flex-column min-vh-100 bg-light">
-
-    <!-- Header con Barra de navegación -->
-    <header class="bg-primary text-white p-3">
-        <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-            <div class="container">
-                <a class="navbar-brand" href="index.html">Home</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav ms-auto">
-                        <li class="nav-item"><a class="nav-link" href="avisos.html">Avisos</a></li>
-                        <li class="nav-item"><a class="nav-link" href="sobremi.html">Sobre mí</a></li>
-                        <li class="nav-item"><a class="nav-link" href="materias2025.html">Materias 2025</a></li>
-                        <li class="nav-item"><a class="nav-link active" href="disenoYDesarrolloWeb.html">Diseño y Desarrollo Web</a></li>
-                        <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
-                    </ul>
-                </div>
+<body class="d-flex flex-column min-vh-100">
+    <!-- Menú superior -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-success">
+        <div class="container">
+            <a class="navbar-brand" href="#">Diseño y Desarrollo Web</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="#fechas">Fechas de Exámenes</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#actividades">Actividades UVAs</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#bibliografia">Bibliografía</a></li>
+                </ul>
             </div>
-        </nav>
-    </header>
+        </div>
+    </nav>
 
     <!-- Contenido principal -->
     <main class="container my-4 flex-grow-1">
-        <h1 class="text-primary">Diseño y Desarrollo Web</h1>
-
-        <!-- Fechas de exámenes -->
-        <section class="mt-4">
-            <h2 class="text-secondary">Fechas de Exámenes</h2>
-            <ul class="list-group">
-                <li class="list-group-item">25/04: Primer Parcial</li>
-                <li class="list-group-item">13/06: Segundo Parcial</li>
-            </ul>
-        </section>
-
-        <!-- Actividades UVAs -->
-        <section class="mt-4">
-            <h2 class="text-secondary">Actividades UVAs</h2>
-            <p>
-                Aquí puedes encontrar enlaces a las actividades realizadas:
-            </p>
-            <ul class="list-group">
-                <li class="list-group-item">
-                    <a href="https://github.com/mapantano/DYDWUADE" target="_blank" class="btn btn-link">Repositorio de la actividad</a>
-                </li>
-                <li class="list-group-item">
-                    <a href="https://mapantano.github.io/DYDWUADE/" target="_blank" class="btn btn-link">Actividad desplegada en GitHub Pages</a>
-                </li>
-            </ul>
-        </section>
-
-        <!-- Bibliografía -->
-        <section class="mt-4">
-            <h2 class="text-secondary">Bibliografía</h2>
-            <p>
-                Puedes consultar el material recomendado en el aula virtual o en las clases asignadas.
-            </p>
-        </section>
+        <div class="row">
+            <!-- Primera columna -->
+            <div class="col-md-4">
+                <!-- Caja 1: Fechas de Exámenes -->
+                <section id="fechas" class="border rounded p-3 mb-4 bg-light">
+                    <h2 class="h5 text-center">Fechas de Exámenes</h2>
+                    <ul class="list-group">
+                        <li class="list-group-item">25/04: Primer Parcial</li>
+                        <li class="list-group-item">13/06: Segundo Parcial</li>
+                    </ul>
+                </section>
+                <!-- Caja 2: Bibliografía -->
+                <section id="bibliografia" class="border rounded p-3 bg-light">
+                    <h2 class="h5 text-center">Bibliografía</h2>
+                    <ul class="list-group">
+                        <li class="list-group-item"><a href="https://www.w3.org/" target="_blank" class="btn btn-link">Creación de páginas Web - W3C</a></li>
+                        <li class="list-group-item"><a href="https://platform.html5.org/" target="_blank" class="btn btn-link">HTML5 Platform</a></li>
+                        <li class="list-group-item"><a href="https://www.w3schools.com/" target="_blank" class="btn btn-link">W3Schools</a></li>
+                        <li class="list-group-item"><a href="https://agenciaciscar.com/estructura-de-un-sitio-web/" target="_blank" class="btn btn-link">Estructura de un sitio web</a></li>
+                        <li class="list-group-item"><a href="https://www.publisuites.com/blog/arquitectura-de-la-informacion/" target="_blank" class="btn btn-link">Arquitectura de la Información</a></li>
+                        <li class="list-group-item"><a href="https://www.aluracursos.com/blog/github-pages" target="_blank" class="btn btn-link">GitHub Pages</a></li>
+                    </ul>
+                </section>
+            </div>
+            <!-- Segunda columna -->
+            <div class="col-md-8">
+                <section id="actividades" class="border rounded p-3 bg-light">
+                    <h2 class="h5 text-center">Actividades UVAs</h2>
+                    <p>A continuación, puedes encontrar los enlaces a las actividades:</p>
+                    <ul class="list-group">
+                        <li class="list-group-item">
+                            <strong>Página "Sobre mí":</strong>
+                            <a href="https://mapantano.github.io/DYDWUADE/" target="_blank" class="btn btn-outline-success btn-sm">Ver página</a>
+                            <a href="https://github.com/mapantano/DYDWUADE" target="_blank" class="btn btn-outline-success btn-sm">Ver repositorio</a>
+                        </li>
+                        <li class="list-group-item">
+                            <strong>Ejercicio Integrador:</strong>
+                            <a href="https://mapantano.github.io/DYDW1PARCIAL/index.html" target="_blank" class="btn btn-outline-success btn-sm">Ver página</a>
+                            <a href="https://github.com/mapantano/DYDW1PARCIAL" target="_blank" class="btn btn-outline-success btn-sm">Ver repositorio</a>
+                        </li>
+                        <li class="list-group-item">
+                            <strong>Página de la Materia:</strong>
+                            <a href="https://mapantano.github.io/dydwpaginademateria/" target="_blank" class="btn btn-outline-success btn-sm">Ver página</a>
+                            <a href="https://github.com/mapantano/dydwpaginademateria" target="_blank" class="btn btn-outline-success btn-sm">Ver repositorio</a>
+                        </li>
+                    </ul>
+                </section>
+            </div>
+        </div>
     </main>
 
     <!-- Footer -->
     <footer class="bg-dark text-white text-center p-3 mt-auto">
-        <p>Curso: Nro curso / Profesora: Patricia Litovicius</p>
+        <p class="mb-0">Curso: 15130 / Profesora: Patricia Litovicius</p>
     </footer>
 
     <!-- Bootstrap JS -->
