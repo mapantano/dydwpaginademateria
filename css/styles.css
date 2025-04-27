@@ -1,0 +1,157 @@
+body {
+    background-color: #f7f6fb;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Grid */
+.row.g-4 {
+    margin-top: 2rem;
+}
+
+/* Secciones con sombra */
+.sombra-seccion {
+    background-color: #ffffff;
+    border-radius: 0.75rem;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    border: 1px solid #e5e0f7;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.sombra-seccion:hover {
+    transform: translateY(-4px);
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Fondo de los encabezados de las cards */
+.card-encabezado {
+    background-color: #e5e0f7;
+    color: #4a47a3;
+    font-weight: 700;
+    font-size: 1.3rem;
+    padding: 0.8rem 1rem;
+    border-top-left-radius: 0.75rem;
+    border-top-right-radius: 0.75rem;
+    margin-bottom: 1rem;
+}
+
+/* Título principal de página */
+.titulo-principal {
+    color: #4a47a3;
+    font-weight: 700;
+    font-size: 2.2rem;
+}
+
+.subtitulo-materia {
+    font-size: 1.1rem;
+    color: #6c757d;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    font-weight: 400;
+}
+
+/* Subtítulos internos */
+.subtitulo-seccion {
+    color: #4a47a3;
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+
+/* Texto UVA */
+.text-uva {
+    color: #4a47a3;
+    font-weight: 700;
+    font-size: 1.3rem;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    padding-top: 1rem;
+    border-top: 2px solid #e5e0f7;
+}
+
+.text-uva:first-of-type {
+    border-top: none;
+    margin-top: 0;
+    padding-top: 0;
+}
+
+/* Enlaces en bibliografía */
+.link-materia {
+    color: #212529;
+    font-weight: 500;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.link-materia:hover {
+    color: #4a47a3;
+    text-decoration: underline;
+}
+
+/* NAVBAR */
+.nav-link {
+    white-space: nowrap !important;
+    margin: 0 0.5rem;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    text-decoration: none;
+    color: #ffd700 !important;
+}
+
+.navbar-toggler {
+    border: none;
+    outline: none;
+    box-shadow: none;
+}
+
+/* Botones de actividades */
+.btn-custom {
+    background-color: #e5e0f7;
+    color: #4a47a3;
+    font-weight: 600;
+    padding: 0.4rem 1rem;
+    font-size: 0.9rem;
+    border-radius: 0.5rem;
+    border: none;
+    transition: background-color 0.3s, transform 0.3s, color 0.3s;
+    margin-right: 0.5rem;
+}
+
+.btn-custom:hover {
+    background-color: #4a47a3;
+    color: #ffffff;
+    transform: translateY(-2px);
+}
+
+/* Sección actividades */
+.actividad-item {
+    border-bottom: 1px solid #e5e0f7;
+    padding-bottom: 0.8rem;
+}
+
+.actividad-item:last-child {
+    border-bottom: none;
+}
+
+/* Header y Footer */
+.bg-header {
+    background-color: #4a47a3;
+}
+
+.bg-footer {
+    background-color: #4a47a3;
+    color: #ffffff;
+}
+
+footer p {
+    margin: 0;
+    font-size: 1rem;
+}
+
+
+/* Responsive */
+@media (max-width: 768px) {
+    .row.g-4 {
+        margin-top: 1rem;
+    }
+}
